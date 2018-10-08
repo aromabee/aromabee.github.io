@@ -10,5 +10,10 @@
 </head>
 <body>
 	<div id="demo"></div>
+	<script type="text/javascript">
+		var x = document.getElementsByTagName("META");
+		x[2].content = "Congratulations You Get Score 1000.";
+		document.getElementById("demo").innerHTML = x[2].content;
+	</script>
 </body>
 </html>

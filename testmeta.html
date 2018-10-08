@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Test META</title>
+	<meta name="description" content="Free Web tutorials">
+</head>
+<body>
+	<div id="demo"></div>
+
+	<script type="text/javascript">
+		var x = document.getElementsByTagName("META");
+		// alert(x[0].content);
+
+		var urlParams = new URLSearchParams(window.location.search);
+		// console.log(urlParams.get('description'));
+
+		x["description"].content = urlParams.get('description');
+		console.log(x["description"].content);
+		// alert(x["description"].content);
+		document.getElementById("demo").innerHTML = x["description"].content;
+
+	</script>
+</body>
+</html>

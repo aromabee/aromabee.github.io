@@ -2,23 +2,13 @@
 <html>
 <head>
 	<title>Test META</title>
-	<meta name="description" content="Free Web tutorials">
+	<meta property="og:url"                content="https://www.google.co.th/" />
+	<meta property="og:type"               content="website" />
+	<meta property="og:title"              content="Congratulations You Get Score 999." />
+	<meta property="og:description"        content="Thank you so much." />
+	<meta property="og:image"              content="https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/lWB96Z8sFtt.png" />
 </head>
 <body>
 	<div id="demo"></div>
-
-	<script type="text/javascript">
-		var x = document.getElementsByTagName("META");
-		// alert(x[0].content);
-
-		var urlParams = new URLSearchParams(window.location.search);
-		// console.log(urlParams.get('description'));
-
-		x["description"].content = urlParams.get('description');
-		console.log(x["description"].content);
-		// alert(x["description"].content);
-		document.getElementById("demo").innerHTML = x["description"].content;
-
-	</script>
 </body>
 </html>
